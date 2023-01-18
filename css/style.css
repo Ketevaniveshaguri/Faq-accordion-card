@@ -20,10 +20,6 @@ body {
   background-repeat: no-repeat; }
 
 .faq-accordion-card {
-  background: url("../images/bg-pattern-desktop.svg"), white;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: -530px -265px;
   display: flex;
   justify-content: space-around;
   background-color: white;
@@ -34,29 +30,55 @@ body {
   margin: 16.2rem auto;
   border-radius: 23px;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159); }
+  @media only screen and (min-width: 60em) {
+    .faq-accordion-card {
+      background: url("../images/bg-pattern-desktop.svg"), white;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: -530px -265px; } }
+  @media only screen and (max-width: 60em) {
+    .faq-accordion-card {
+      width: 33rem;
+      height: 54rem;
+      flex-direction: column; } }
 
 h1 {
   font-size: 3.2rem;
   color: #1e1f36;
   text-transform: uppercase;
-  margin-left: 13rem; }
+  margin-left: 7rem; }
+  @media only screen and (max-width: 60em) {
+    h1 {
+      margin-top: -50rem;
+      margin-left: -2rem; } }
 
 .illustration-woman {
   width: 45rem;
   height: 33rem;
   margin-top: -5rem;
-  margin-left: -20rem; }
+  margin-left: -15rem; }
+  @media only screen and (max-width: 60em) {
+    .illustration-woman {
+      width: 24rem;
+      height: 14rem;
+      margin: 0 auto 50rem auto; } }
 
 .faq-accordion-card .illustration-part img.box {
   position: absolute;
   top: 10rem;
-  left: 13px; }
+  margin-left: -20rem; }
 
 .pattern-mobile {
-  display: none; }
+  position: absolute; }
+  @media only screen and (min-width: 60em) {
+    .pattern-mobile {
+      display: none; } }
 
 .box {
-  margin-top: 11rem; }
+  margin-top: 25rem; }
+  @media only screen and (max-width: 60em) {
+    .box {
+      display: none; } }
 
 .first {
   margin-top: 4.5rem; }
@@ -69,17 +91,33 @@ h1 {
   width: 35rem;
   margin-bottom: 3.7rem;
   border-bottom: solid #e8e8ea 0.1rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 2.5rem;
   height: 1.4rem;
-  margin-left: 13rem;
+  margin-left: 7rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
+  @media only screen and (max-width: 60em) {
+    .question {
+      width: 28rem;
+      margin-left: -2rem;
+      font-size: 1.3rem; } }
+
+.question:hover {
+  color: #f47b56; }
+
+.question:active {
+  color: #1e1f36;
+  font-weight: 700; }
 
 .icon-arrow-down {
-  width: 0.9rem;
-  height: 0.5rem;
+  width: 1rem;
+  height: 0.6rem;
   margin-left: 7.2rem; }
+  @media only screen and (max-width: 60em) {
+    .icon-arrow-down {
+      margin-left: 2rem; } }
 
 .answer {
   width: 31rem;
