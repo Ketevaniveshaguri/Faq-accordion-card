@@ -1,8 +1,4 @@
-$bp-largest: 75em; //1200
 $bp-large: 60em;
-$bp-medium: 50em;
-$bp-small: 37.5em;
-$bp-smallest: 31.25em;
 
 *,
 *::before,
@@ -55,38 +51,49 @@ h1 {
   font-size: 3.2rem;
   color: #1e1f36;
   text-transform: uppercase;
-  margin-left: 7rem;
+  margin-left: 8rem;
   @media only screen and (max-width: $bp-large) {
-    margin-top: -50rem;
-    margin-left: -2rem;
+    margin-top: -46rem;
+    // margin-left: -2rem;
+    margin-left: 9rem;
   }
 }
 
 .illustration-woman {
-  width: 45rem;
-  height: 33rem;
-  margin-top: -5rem;
-  margin-left: -15rem;
+  @media only screen and (min-width: $bp-large) {
+    width: 45rem;
+    height: 33rem;
+    margin-top: -5rem;
+    margin-left: -15rem;
+  }
   @media only screen and (max-width: $bp-large) {
-    width: 24rem;
-    height: 14rem;
-    margin: 0 auto 50rem auto;
+    display: none;
   }
 }
-
+.illustration-woman-mobile {
+  margin: 0 auto 35rem 3rem;
+  width: 26rem;
+  height: 15rem;
+  // position: relative;
+  transform: translateY(-5rem);
+  @media only screen and (min-width: $bp-large) {
+    display: none;
+  }
+}
 .faq-accordion-card .illustration-part img.box {
   position: absolute;
   top: 10rem;
   margin-left: -20rem;
 }
 .pattern-mobile {
-  // display: none;
-  // margin-top: 5rem;
-  position: absolute;
+  transform: translateY(-48rem);
+  margin-left: 3.7rem;
+
   @media only screen and (min-width: $bp-large) {
     display: none;
   }
 }
+
 .box {
   margin-top: 25rem;
   @media only screen and (max-width: $bp-large) {
@@ -95,27 +102,26 @@ h1 {
 }
 .first {
   margin-top: 4.5rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 4rem;
+  }
 }
 
 .question {
   color: #4b4c5f;
-  // width: 35rem;
+  margin-top: 1.6rem;
   font-size: 1.4rem;
   font-weight: 400;
   list-style-type: none;
   width: 35rem;
-  margin-bottom: 3.7rem;
-  border-bottom: solid #e8e8ea 0.1rem;
-  padding-bottom: 2.5rem;
+  margin-bottom: 1.2rem;
   height: 1.4rem;
-  margin-left: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   @media only screen and (max-width: $bp-large) {
     width: 28rem;
-    margin-left: -2rem;
     font-size: 1.3rem;
   }
 }
@@ -137,12 +143,25 @@ h1 {
 .answer {
   width: 31rem;
   font-size: 1.2rem;
-  margin-top: -4rem;
   font-weight: 400;
-  margin-left: 13rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
+  line-height: 1.2;
   display: none;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.1rem;
+    width: 28rem;
+  }
 }
 .question-answer ul li {
   list-style: none;
+}
+
+.accordion-items {
+  border-bottom: solid #e8e8ea 0.1rem;
+  width: 35rem;
+  margin-left: 8rem;
+  @media only screen and (max-width: $bp-large) {
+    width: 28rem;
+    margin-left: -2rem;
+  }
 }
